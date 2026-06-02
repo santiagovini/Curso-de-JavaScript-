@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>Calculadora</title>
+   <link rel="stylesheet" href="calculadora.css" />
+   num1  : <input id="num1" type="text"><br />
+   num2  : <input id="num2" type="text"><br />
+   <button onclick="multiplicar()">Multiplicar</button>
+   <button onclick="somar()">Somar</button>
+   <button onclick="subtrair()">Subtrair</button>
+   <button onclick="dividir()">Dividir</button>
+
+   <script type="text/javascript">
+    function multiplicar(){
+     var num1 = parseFloat(document.getElementById("num1").value);
+     var num2 = parseFloat(document.getElementById("num2").value);
+     var resultado = num1 * num2;
+     alert("O resultado da multiplicação é: " + resultado);
+    }
+
+    function somar(){
+     var num1 = parseFloat(document.getElementById("num1").value);
+     var num2 = parseFloat(document.getElementById("num2").value);
+     var resultado = num1 + num2;
+     alert("O resultado da soma é: " + resultado);
+    }
+
+    function subtrair(){
+     var num1 = parseFloat(document.getElementById("num1").value);
+     var num2 = parseFloat(document.getElementById("num2").value);
+     var resultado = num1 - num2;
+     alert("O resultado da subtração é: " + resultado);
+    }
+
+    function dividir(){
+     var num1 = parseFloat(document.getElementById("num1").value);
+     var num2 = parseFloat(document.getElementById("num2").value);
+     var resultado = num1 / num2;
+     alert("O resultado da divisão é: " + resultado);
+    }
+
+    if (num1 === '' || num2 === '') {
+        alert("Por favor, preencha ambos os campos de número.");
+    } else if (isNaN(num1) || isNaN(num2)) {
+        alert("Por favor, insira valores numéricos válidos.");
+    } else if (num2 === 0) {
+     alert("Não é possível dividir por zero!");
+    }
+    
+ </script>
+ </head>
+</html>

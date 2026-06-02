@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM</title>
+</head>
+<body>
+    <h1 id="titulo">Título Original</h1>
+    <p style = "background-color: blue;" id="paragrafo">Este é um parágrafo.</p>
+    <button id="botao">Clique aqui para trocar o texto</button>
+
+    <hr>
+    <input type="text" id="campoTexto" placeholder="Digite algo...">
+    <p id="textoCopiado"></p>
+
+    <script>
+        document.getElementById("titulo").textContent = "Novo Título";
+        document.getElementById("paragrafo").style.color = "white";
+        document.getElementById("botao").addEventListener("mouseover", function() {
+            document.getElementById("botao").style.borderColor = "red";
+        });
+
+        // Modificação: Lógica de captura em tempo real do Exercício 2
+        document.getElementById("campoTexto").addEventListener("input", function() {
+            document.getElementById("textoCopiado").textContent = this.value;
+        });
+    </script>
+</body>
+</html>
+
+// tirar duvidas com o professor sobre o exercicio 2, nao consegui fazer a parte de copiar o texto do input para o paragrafo em tempo real, tentei usar o evento "input" mas nao funcionou, nao sei se tem algo errado no codigo ou se tem que ser usado outro evento.

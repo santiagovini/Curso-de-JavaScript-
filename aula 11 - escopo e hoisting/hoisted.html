@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+     function exemplo() { 
+        if (true) { 
+        var nome = "Ana"; 
+} 
+console.log(nome); 
+}
+
+// O que acontece é que a variável nome é declarada com var, que tem escopo de função, ou seja, ela é acessível em toda a função exemplo(), mesmo dentro do bloco if. 
+// Portanto, quando o console.log(nome) é executado, ele consegue acessar a variável nome e exibe o valor "Ana".
+// Se a variável nome fosse declarada com let ou const, que têm escopo de bloco, o console.log(nome) dentro da função exemplo() resultaria em um erro, pois a variável nome não seria acessível fora do bloco if.
+
+    </script>
+</body>
+</html>
+

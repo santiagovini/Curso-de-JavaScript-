@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var x = 1; 
+        function teste() { 
+            console.log(x); 
+        var x = 2;  
+            console.log(x); 
+} 
+teste();
+console.log(x);
+// Ao sobrescrever a variável X dentro da função, a primeira referencia se perde, exibindo o valor 2
+// Em um teste isolado, chamando a variavel x fora da função, conseguimos o valor 1, pois a variável
+//  x dentro da função é diferente da variável x fora da função, ou seja, são variáveis com escopos diferentes.
+        
+        </script>
+</body>
+</html>

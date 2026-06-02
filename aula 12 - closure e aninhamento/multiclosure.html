@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function multiplicador(x) {
+
+    return function(numero) {
+        return numero * x;
+    };
+
+}
+
+const dobrar = multiplicador(2);
+console.log(dobrar(4)); 
+    </script>
+</body>
+</html>
+
+// a vantagem do closure é que ele permite que a função interna acesse e manipule as variáveis da função externa mesmo após a função externa ter sido executada.

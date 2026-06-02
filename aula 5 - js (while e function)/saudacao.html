@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>Curso JavaScript Progressivo</title>
+   Seu nome  : <input id="name" type="text"><br />
+   <button onclick="entrar()">Entrar</button>
+
+   <script type="text/javascript">
+    function entrar(){
+     var nome = document.getElementById("name").value;
+     if (nome) {
+      alert("Bem-vindo, " + nome + "!");
+     } else {
+      alert("Por favor, digite seu nome.");
+     }
+    }
+ </script>
+ </head>
+</html>

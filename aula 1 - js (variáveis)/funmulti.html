@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>Curso JavaScript Progressivo</title>
+   Seu numero1  : <input id="num1" type="text"><br />
+   Seu numero2  : <input id="num2" type="text"><br />
+   <button onclick="multiplicar()">Multiplicar</button>
+
+   <script type="text/javascript">
+    function multiplicar(){
+     var num1 = parseFloat(document.getElementById("num1").value);
+     var num2 = parseFloat(document.getElementById("num2").value);
+     var resultado = num1 * num2;
+     alert("O resultado da multiplicação é: " + resultado);
+    }
+ </script>
+ </head>
+</html>
