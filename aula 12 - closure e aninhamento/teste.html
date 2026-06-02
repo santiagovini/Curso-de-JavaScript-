@@ -8,10 +8,10 @@
 <body>
     <script>
         function criarContador() { 
-let i = 0; 
-return function() { 
-return ++i; 
-} 
+            let i = 0; 
+            return function() { 
+                return ++i; 
+            } 
 } 
 let c1 = criarContador(); 
 let c2 = criarContador(); 
@@ -22,4 +22,8 @@ console.log(c2()); // 1
 </body>
 </html>
 
-// Esses resul
+// Esses resultado cria uma função chamada criarContador, que retorna outra função, no caso,
+para incrementar o valor de i (++i = pré incremento => 1 + i=0). Ao criarmos c1 e c2 e relacionando
+a função criarContador, cada uma delas ganha uma contagem própria, ou seja, c1 tem a sua contagem e c2 tem a sua contagem.
+Por isso, quando chamamos c1() pela primeira vez, ele retorna 1, e quando chamamos c1() novamente, ele retorna 2.
+Já quando chamamos c2() pela primeira vez, ele retorna 1, pois é uma contagem diferente da de c1.
