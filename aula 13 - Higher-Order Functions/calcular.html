@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function calcular(x) {
+
+    return function(numero) {
+        return numero + x;
+    };
+
+}
+
+const somar = calcular(2);
+console.log(somar(4)); 
+    </script>
+</body>
+</html>
+
+// utlizando esse cod de base, . (Desafio) Implemente uma função `compose(f, g)` que retorna uma nova 
+função onde `f(g(x))` é executado. Por exemplo, se `f(x) = x + 2` e `g(x) = x * 3`, então `compose(f, g)(4)` deve retornar `14`,
+

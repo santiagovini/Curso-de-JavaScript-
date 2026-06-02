@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compose</title>
+</head>
+<body>
+    <script>
+        function compose(f, g) {
+            return function(x) {
+                return f(g(x));
+            };
+        }
+
+        // Funções de exemplo
+        function f(x) {
+            return x + 2;
+        }
+
+        function g(x) {
+            return x * 3;
+        }
+
+        const resultado = compose(f, g);
+
+        console.log(resultado(4)); // 14
+    </script>
+</body>
+</html>
+
+// nao entendi. Ajuda
